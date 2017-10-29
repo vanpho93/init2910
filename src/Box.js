@@ -10,9 +10,10 @@ export default class Box extends Component {
     }
 
     addOne() {
-        this.setState({
-            value: this.state.value + 1
-        })
+        // this.setState({
+        //     value: this.state.value + 1
+        // })
+        this.setState(prevState => ({ value: prevState.value + 1 }))
     }
 
     render() {
