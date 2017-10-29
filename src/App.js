@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Word from "./Word";
+import Box from './Box';
+
 class App extends Component {
   render() {
-    const spot = { en: 'remote', vn: 'tu xa', isMemorized: true }
     return (
       <div className="App">
-        <Word spot={spot} />
+        <Box />
       </div>
     );
   }
